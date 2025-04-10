@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: is8u79rlq-python-gitops
+  description: This is GitOps manifest for is8u79rlq-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=is8u79rlq-python
+    backstage.io/kubernetes-id: is8u79rlq-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: is8u79rlq-python
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:is8u79rlq-python

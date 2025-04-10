@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: is8u79rlq-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/is8u79rlq-python
